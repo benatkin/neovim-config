@@ -53,7 +53,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'groenewege/vim-less'
 Plug 'tpope/vim-markdown'
 Plug 'vim-scripts/nginx.vim'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-syntastic/syntastic'
 Plug 'Shougo/neocomplcache.vim'
@@ -96,6 +96,12 @@ au BufRead,BufNewFile *.nginx set ft=nginx
 au BufRead,BufNewFile */etc/nginx/* set ft=nginx
 au BufRead,BufNewFile */usr/local/nginx/conf/* set ft=nginx
 au BufRead,BufNewFile nginx.conf set ft=nginx
+
+au FileType php setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+au FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
+au FileType jsx setlocal expandtab shiftwidth=2 softtabstop=2
+au FileType mjs setlocal expandtab shiftwidth=2 softtabstop=2
+au FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2
 
 set mouse=a                 " Automatically enable mouse usage
 set mousehide               " Hide the mouse cursor while typing
