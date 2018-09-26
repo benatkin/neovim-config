@@ -103,5 +103,5 @@ au FileType jsx setlocal expandtab shiftwidth=2 softtabstop=2
 au FileType mjs setlocal expandtab shiftwidth=2 softtabstop=2
 au FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2
 
-set mouse=a                 " Automatically enable mouse usage
+set mouse=n                 " Enable the mouse only in normal mode (for mouse wheel; go to insert mode to select)
 set mousehide               " Hide the mouse cursor while typing
