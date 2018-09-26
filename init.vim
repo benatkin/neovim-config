@@ -97,6 +97,8 @@ au BufRead,BufNewFile */etc/nginx/* set ft=nginx
 au BufRead,BufNewFile */usr/local/nginx/conf/* set ft=nginx
 au BufRead,BufNewFile nginx.conf set ft=nginx
 
+autocmd BufWritePre * :%s/\s\+$//e
+
 au FileType php setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 au FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
 au FileType jsx setlocal expandtab shiftwidth=2 softtabstop=2
