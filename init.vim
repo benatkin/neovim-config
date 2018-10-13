@@ -12,7 +12,7 @@ endif
 
 set ignorecase
 set number
-set conceallevel=1
+set conceallevel=0
 set termguicolors
 set background=dark
 
@@ -107,3 +107,7 @@ au FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2
 
 set mouse=n                 " Enable the mouse only in normal mode (for mouse wheel; go to insert mode to select)
 set mousehide               " Hide the mouse cursor while typing
+
+inoremap <C-l> <Esc>
+vnoremap <C-l> <Esc>
+cnoremap <C-l> <C-C><Esc>
